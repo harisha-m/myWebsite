@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .example1 {
+            position: relative;
+            height: 200px;
+            width: 200px;
+        }
+        
+        .star1 {
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            position: absolute;
+            background: red;
+            display: block;
+            text-align: center;
+            -webkit-transform: rotate(-22.5deg);
+            -moz-transform: rotate(-22.5deg);
+            rotation: -22.5deg;
+            transition: transform 0.3s ease;
+            -moz-transition: -moz-transform 0.3s ease;
+            -webkit-transition: -webkit-transform 0.3s ease;
+            -o-transition: -o-transform 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .star1 span {
+            display: block;
+            height: 100px;
+            width: 100px;
+            background: red;
+            rotation: 45deg;
+            -webkit-transform: rotate(45deg);
+        }
+        
+        .star1:hover {
+            background: yellow;
+            color: black;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            rotation: -405deg;
+        }
+        
+        .star1 span:hover {
+            background: yellow;
+            color: black;
+        }
+        
+        .example2 {
+            position: relative;
+            height: 200px;
+            width: 200px;
+        }
+        
+        .star2 {
+            display: block;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            rotation: -22.5deg;
+            -webkit-transform: rotate(-22.5deg);
+            -moz-transform: rotate(-22.5deg);
+            background: pink;
+            margin: 20px;
+            text-align: center;
+        }
+        
+        .star2 span {
+            display: block;
+            height: 100px;
+            width: 100px;
+            rotation: 45deg;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            background: pink;
+        }
+        
+        .star2:hover,
+        .star2 span:hover {
+            background: black;
+            color: aliceblue;
+        }
+        
+        .star2:hover {
+            rotation: -45deg;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="example1"> <a href="#" class="star1"><span>Star1</span> </a> </div>
+    <div class="example2"><a href="#" class="star2"><span>Sata2</span></a></div>
+</body>
+
+</html>
